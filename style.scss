@@ -1,0 +1,73 @@
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.button {
+  border: none;
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+  border-radius: 5rem;
+  background: rgb(54, 54, 224);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+label {
+  border: none;
+  padding: 1rem;
+  border-radius: 5rem;
+
+  cursor: pointer;
+  background: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.11);
+  overflow: hidden;
+
+  :checked {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg)
+      brightness(112%) contrast(101%) !important;
+  }
+}
+.white {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg)
+    brightness(112%) contrast(101%) !important;
+}
+
+.border {
+  border: 2px solid #fff !important;
+}
+.dark {
+  border: 2px solid rgb(54, 54, 224);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input:checked + label {
+  border: 2px solid rgb(0, 0, 0) !important;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg)
+    brightness(112%) contrast(101%) !important;
+}
+
+// input:checked + .button {
+//   border: 2px solid rgb(0, 0, 0) !important;
+//   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(125deg)
+//     brightness(112%) contrast(101%) !important;
+// }
+
+// #light:checked body {
+//   background-color: rgb(2, 2, 2);
+// }
+
+.dark-mode {
+  background-color: #2b2b2b !important;
+  transition: all 0.5s;
+}
